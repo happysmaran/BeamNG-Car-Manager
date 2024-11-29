@@ -1,0 +1,123 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#save-file-selector {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#save-file-selector select,
+#save-file-selector button {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #f26722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e67e00;
+}
+
+#car-manager h2 {
+  margin-bottom: 10px;
+}
+
+#car-list {
+  margin-top: 20px;
+}
+
+.car-entry {
+  background-color: #fafafa;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.car-entry img {
+  max-width: 150px;
+  max-height: 100px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.car-entry button {
+  margin-right: 10px;
+}
+
+.car-details {
+  margin-top: 10px;
+}
+
+.car-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.car-details ul li {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.car-details ul li .detail-text {
+  text-align: left;
+}
+
+.car-details ul li .buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.car-details ul li .buttons button {
+  background-color: #f26722;
+  /* Orange for Edit/Delete */
+}
+
+/* Add Detail button */
+.add-detail-btn {
+  margin-top: 10px;
+  background-color: #28a745;
+  /* Green for Add Detail */
+}
+
+/* New button style for cars */
+.car-btn {
+  margin-top: 10px;
+  background-color: #f26722;
+  /* Orange for Change Image / Delete Car */
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeamNG Car Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>BeamNG Car Manager</h1>
+
+    <button onclick="saveDataToFile()">Save Data to File</button>
+    <input type="file" id="import-file" style="display: none;">
+    <button onclick="document.getElementById('import-file').click();">Import Data from File</button>
+
+
+    <div id="save-file-selector">
+      <label for="save-file">Select Save File:</label>
+      <select id="save-file">
+        <option value="">-- Select Save File --</option>
+      </select>
+      <button onclick="createSaveFile()">Create New Save File</button>
+      <button onclick="deleteSaveFile()">Delete Save File</button>
+    </div>
+
+    <div id="car-manager">
+      <h2>Manage Cars</h2>
+      <button onclick="createCar()">Add New Car</button>
+
+      <div id="car-list"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
